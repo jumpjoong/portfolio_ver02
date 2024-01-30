@@ -12,7 +12,7 @@ export default function Intro({ scrollTop }: ScrollTopType) {
         </svg>
         <svg>
           <text x="50%" y="80%" textAnchor="middle">
-            im.sh
+            im.hj
           </text>
         </svg>
       </div>

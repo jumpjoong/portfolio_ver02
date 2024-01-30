@@ -6,7 +6,6 @@ import Modal from "../common/Modal";
 import Input from "../common/Input";
 import { addFirestore, uploadImage } from "@/firebase";
 import { BorderBox } from "../common/BorderBox";
-import Image from "next/image";
 import Link from "next/link";
 import { ProjectsData } from "@/types";
 
@@ -29,9 +28,7 @@ export default function Projects({ myProjectsData }: ProjectProps) {
     github: "",
     image: undefined,
   };
-  const [projectValue, setProjectValue] = useState<AddProjectsValueType>(
-    initialAddProjectValue
-  );
+  const [projectValue, setProjectValue] = useState<AddProjectsValueType>(initialAddProjectValue);
   const [modalVisible, setModalVisible] = useState<boolean>(false);
   const [focusProjectIndex, setFocusProjectIndex] = useState<number>(0);
   const currentFocusProject = myProjectsData?.[focusProjectIndex];
@@ -42,6 +39,7 @@ export default function Projects({ myProjectsData }: ProjectProps) {
   };
 
   const addProject = async () => {
+    console.log("프로젝트")
     if (projectValue.name !== "" && projectValue.description !== "") {
       try {
         const date = new Date();
@@ -82,10 +80,10 @@ export default function Projects({ myProjectsData }: ProjectProps) {
         <Modal
           label="프로젝트 추가하기"
           closeModal={modalToggle}
-          // saveModal={addProject}
-          saveModal={() => {
-            alert("권한이 없습니다.");
-          }}
+          saveModal={addProject}
+          // saveModal={() => {
+          //   alert("권한이 없습니다.");
+          // }}
         >
           <Input
             autoFocus
@@ -197,22 +195,22 @@ export default function Projects({ myProjectsData }: ProjectProps) {
                         <path
                           d="M21.25 15.9136C21.25 19.3654 18.4518 22.1636 15 22.1636C11.5482 22.1636 8.75 19.3654 8.75 15.9136C8.75 12.4618 11.5482 9.66357 15 9.66357C18.4518 9.66357 21.25 12.4618 21.25 15.9136Z"
                           stroke="#FFF"
-                          stroke-width="1.5"
+                          strokeWidth="1.5"
                         ></path>
                         <path
                           d="M12.5 9.91357C12.5 9.91357 17 15.4136 18 21.4136"
                           stroke="#FFF"
-                          stroke-width="1.5"
+                          strokeWidth="1.5"
                         ></path>
                         <path
                           d="M19.5 11.9136C19.5 11.9136 14.5 15.9136 8.5 16.9136"
                           stroke="#FFF"
-                          stroke-width="1.5"
+                          strokeWidth="1.5"
                         ></path>
                         <path
                           d="M12 21.4137C12 21.4137 15.5 16.4137 21.5 17.4137"
                           stroke="#FFF"
-                          stroke-width="1.5"
+                          strokeWidth="1.5"
                         ></path>
                       </g>
                     </svg>

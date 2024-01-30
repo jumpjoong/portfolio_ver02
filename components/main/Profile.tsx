@@ -6,13 +6,13 @@ export default function Profile() {
     <section className={styles.profile}>
       <div>
         <div className={styles.profileImage}>
-          <img src={"/images/profile.png"} alt="profile_Photo" />
+          <img src={"/images/profile.jpeg"} alt="profile_Photo" />
         </div>
         <BorderBox boxStyle="square">
-          <div>Address : 서울시 관악구</div>
+          <div>Address : 경기도 시흥시</div>
           <div>
-            <a href="mailto:kingryan9996@gmail.com">
-              Email : kingryan9996@gmail.com
+            <a href="mailto:khj0196@gmail.com">
+              Email : khj0196@gmail.com
             </a>
           </div>
           <div>
@@ -20,7 +20,7 @@ export default function Profile() {
               href="https://docs.google.com/document/d/1nVhil8JEsJZfLaTdyanIcnJLK53OZaHZ/edit?usp=share_link&ouid=114322736588151565489&rtpof=true&sd=true"
               target="_blank"
             >
-              이력서 : 지원자(임승환)
+              이력서 : 지원자(김현중)
             </a>
           </div>
         </BorderBox>

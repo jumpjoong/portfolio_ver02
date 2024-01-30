@@ -1,0 +1,108 @@
+.Projects {
+  position: relative;
+}
+.Projects > button:nth-of-type(1) {
+  color: var(--white);
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 160px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Projects > button:nth-of-type(1) > span {
+  font-size: 30px;
+  transform: translateY(-3px);
+}
+.Projects > div > div > .projectsContentWrapper {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  gap: 0 20px;
+}
+.Projects > div > div > .projectsContentWrapper > .projectsList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+}
+.Projects > div > div > .projectsContentWrapper > .projectsList > div {
+  width: 200px;
+  height: 100%;
+  cursor: pointer;
+}
+.Projects > div > div > .projectsContentWrapper > .projectsList > div > strong {
+  white-space: nowrap;
+  font-size: 18px;
+  line-height: 20px;
+}
+.Projects > div > div > .projectsContentWrapper > .projectDescription {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+}
+.Projects > div > div > .projectsContentWrapper > .projectDescription > .imageWrap {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.Projects > div > div > .projectsContentWrapper > .projectDescription > .imageWrap > img {
+  width: 100%;
+  height: 100%;
+}
+.Projects > div > div > .projectsContentWrapper > .projectDescription > div:nth-of-type(2) {
+  height: calc(100% - 400px);
+  width: 100%;
+  padding: 10px;
+}
+.Projects > div > div > .projectsContentWrapper > .projectDescription > div:nth-of-type(2) > div:nth-of-type(1) {
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  text-align: center;
+  overflow-y: scroll;
+}
+.Projects > div > div > .projectsContentWrapper > .projectDescription > div:nth-of-type(2) > .linkWrap {
+  min-width: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Projects > div > div > .projectsContentWrapper > .projectDescription > div:nth-of-type(2) > .linkWrap a {
+  max-height: calc(50% - 3px);
+  display: flex;
+  align-items: center;
+  color: var(--green);
+  gap: 0 5px;
+}
+.Projects > div > div > .projectsContentWrapper > .projectDescription > div:nth-of-type(2) > .linkWrap a:nth-last-of-type(1) svg {
+  scale: 1.7;
+}
+.Projects > div > div > .projectsContentWrapper > .projectDescription > div:nth-of-type(2) > .linkWrap a:hover > svg {
+  fill: var(--black);
+  stroke: #fff;
+  stroke: var(--green);
+}
+.Projects > div > div > .projectsContentWrapper > .projectDescription > div:nth-of-type(2) > .linkWrap a:hover > svg > g > path {
+  fill: var(--green);
+  stroke: var(--black);
+}
+.Projects > div > div > .projectsContentWrapper > .projectDescription > div:nth-of-type(2) > .linkWrap a:hover > svg > g > path:nth-of-type(1) {
+  stroke: var(--black);
+  stroke-width: 0.01;
+}
+.Projects > div > div > .projectsContentWrapper > .projectDescription > div:nth-of-type(2) > .linkWrap a:hover > span {
+  color: var(--green);
+}
+.Projects > div > div > .projectsContentWrapper > .projectDescription > div:nth-of-type(2) > .linkWrap a > svg {
+  height: 100%;
+  width: 40px;
+}
+.Projects > div > div > .projectsContentWrapper > .projectDescription > div:nth-of-type(2) > .linkWrap a > span {
+  font-size: 20px;
+}/*# sourceMappingURL=projects.module.css.map */

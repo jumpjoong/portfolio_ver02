@@ -24,8 +24,7 @@ export default function Skills({ mySkillsData }: SkillsProps) {
     experience: "",
     image: undefined,
   };
-  const [skillValue, setSkillValue] =
-    useState<AddSkillValueType>(initialAddSkillValue);
+  const [skillValue, setSkillValue] = useState<AddSkillValueType>(initialAddSkillValue);
   const [modalVisible, setModalVisible] = useState<boolean>(false);
   const [focusSkillIndex, setFocusSkillIndex] = useState<number>(0);
   const currentFocusSkill = mySkillsData?.[focusSkillIndex];
@@ -64,7 +63,6 @@ export default function Skills({ mySkillsData }: SkillsProps) {
       return alert("추가하실 스킬의 이름과 설명을 작성해주세요");
     }
   };
-
   return (
     <>
       {modalVisible && (

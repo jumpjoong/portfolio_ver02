@@ -49,7 +49,6 @@ const fetchCollectionData = async (collectionName: string): Promise<any[]> => {
       id: doc.id,
       ...(doc.data() as Record<string, any>),
     }));
-
     return collectionData;
   } catch (error) {
     handleError(error);

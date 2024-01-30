@@ -1,0 +1,42 @@
+.BorderBox {
+  border: 2px solid var(--green);
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.25s;
+}
+.BorderBox.square {
+  border-radius: 10px;
+}
+.BorderBox.circle {
+  border-radius: 50%;
+}
+.BorderBox.active {
+  background-color: var(--green);
+}
+.BorderBox.false {
+  background-color: var(--slightlyDarkBackground);
+}
+.BorderBox:hover:not(.active) > strong {
+  color: var(--green);
+}
+.BorderBox:hover:not(.active) > strong::after {
+  width: 100%;
+}
+.BorderBox > strong {
+  text-transform: capitalize;
+  transition: 0.25s;
+  position: relative;
+}
+.BorderBox > strong::after {
+  display: block;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid var(--green);
+  transition: 0.25s;
+}/*# sourceMappingURL=borderBox.module.css.map */

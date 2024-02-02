@@ -1,10 +1,8 @@
-import ScrollToTopBtn from "@/components/ScrollToTopBtn";
 import SpaceCanvas from "@/components/SpaceCanvas";
-import Intro from "@/components/main/Intro";
 import "@/style/global.scss";
 import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"],});
 
 export const metadata = {
   title: "Create Next App",
@@ -17,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ko">
+    <html lang="en">
       <body className={inter.className}>
         <SpaceCanvas />
         {children}

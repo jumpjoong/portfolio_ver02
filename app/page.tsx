@@ -1,6 +1,4 @@
 "use client";
-import Image from "next/image";
-import styles from "@/style/app/page.module.scss";
 import Intro from "@/components/main/Intro";
 import Profile from "@/components/main/Profile";
 import Projects from "@/components/main/Projects";

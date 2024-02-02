@@ -1,4 +1,3 @@
-// @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap");
 @import "reset.css";
 @import "color.scss";
 
@@ -85,6 +84,7 @@ body {
         scale: 0;
       }
       > div {
+        height: 100%;
         padding: 0;
         overflow: hidden;
         transition: 1s;
@@ -96,6 +96,7 @@ body {
         }
 
         > img {
+          position: static !important;
           width: 100%;
           height: 100%;
           scale: 0.9;

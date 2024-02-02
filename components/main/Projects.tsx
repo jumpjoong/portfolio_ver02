@@ -8,6 +8,7 @@ import { addFirestore, uploadImage } from "@/firebase";
 import { BorderBox } from "../common/BorderBox";
 import Link from "next/link";
 import { ProjectsData } from "@/types";
+import Image from "next/image";
 
 interface AddProjectsValueType {
   name: string;
@@ -37,9 +38,7 @@ export default function Projects({ myProjectsData }: ProjectProps) {
     setModalVisible(!modalVisible);
     setProjectValue(initialAddProjectValue);
   };
-
   const addProject = async () => {
-    console.log("프로젝트")
     if (projectValue.name !== "" && projectValue.description !== "") {
       try {
         const date = new Date();
@@ -73,7 +72,6 @@ export default function Projects({ myProjectsData }: ProjectProps) {
       return alert("추가하실 프로젝트의 이름과 설명을 작성해주세요");
     }
   };
-
   return (
     <>
       {modalVisible && (
@@ -148,13 +146,15 @@ export default function Projects({ myProjectsData }: ProjectProps) {
             </div>
             <div className={styles.projectDescription}>
               <div className={styles.imageWrap}>
-                {/* <Image
+                <Image
+                  fill
                   src={currentFocusProject?.image}
-                  layout="fill"
-                  alt="/"
+                  alt={`${currentFocusProject?.name}IMG`}
+                  sizes="(max-width: 1920px) 100vw, 100vw"
+                  priority={true}
                   quality={60}
-                /> */}
-                <img src={currentFocusProject?.image} />
+                />
+                {/* <img src={currentFocusProject?.image} /> */}
               </div>
               <BorderBox boxStyle="square">
                 <div>{currentFocusProject?.description}</div>

@@ -115,7 +115,7 @@ function NavigationList({
             src={`/images/navigationBar/${label}.png`}
             width={50}
             height={50}
-            alt={label}
+            alt={`${label}Img`}
           />
           <figcaption>
             <p>{label}</p>

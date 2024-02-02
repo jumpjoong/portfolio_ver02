@@ -1,12 +1,19 @@
 import styles from "@/style/components/main/profile.module.scss";
 import { BorderBox } from "../common/BorderBox";
+import Image from "next/image";
 
 export default function Profile() {
   return (
     <section className={styles.profile}>
       <div>
         <div className={styles.profileImage}>
-          <img src={"/images/profile.jpeg"} alt="profile_Photo" />
+          {/* <img src={"/images/profile.jpeg"} alt="profile_Photo" /> */}
+          <Image 
+            src="/images/profile.jpeg"
+            alt="profile_Photo"
+            fill
+            sizes="(max-width: 1920px) 100vw, 100vw"
+          />
         </div>
         <BorderBox boxStyle="square">
           <div>Address : 경기도 시흥시</div>
@@ -42,7 +49,7 @@ export default function Profile() {
           </span>
           <span>
             &nbsp;&nbsp;현재도 마찬가지지만 앞으로도 더 나은 미래를 위해
-            노력할것입니다.
+            노력할 것입니다.
           </span>
           <span>
             &nbsp;&nbsp;저는 다른 누구도 아닌 저 자신을 위해 노력하기에 더 멀리

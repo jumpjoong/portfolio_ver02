@@ -78,10 +78,10 @@ export default function Projects({ myProjectsData }: ProjectProps) {
         <Modal
           label="프로젝트 추가하기"
           closeModal={modalToggle}
-          saveModal={addProject}
-          // saveModal={() => {
-          //   alert("권한이 없습니다.");
-          // }}
+          // saveModal={addProject}
+          saveModal={() => {
+            alert("권한이 없습니다.");
+          }}
         >
           <Input
             autoFocus

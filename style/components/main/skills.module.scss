@@ -70,6 +70,7 @@
             > .skillDescription {
               // font-size: 20px;
               // line-height: 30px;
+              cursor: default;
               transition: 0.25s;
               &:hover {
                 color: var(--green);

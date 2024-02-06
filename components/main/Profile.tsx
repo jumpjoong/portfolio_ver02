@@ -24,7 +24,7 @@ export default function Profile() {
           </div>
           <div>
             <a
-              href="https://docs.google.com/document/d/1nVhil8JEsJZfLaTdyanIcnJLK53OZaHZ/edit?usp=share_link&ouid=114322736588151565489&rtpof=true&sd=true"
+              href="https://docs.google.com/document/d/1HFrj9YTwJGkI7o3UD1X5ryiYCo3fWuX7/edit?usp=sharing&ouid=109176874359034204971&rtpof=true&sd=true"
               target="_blank"
             >
               이력서 : 지원자(김현중)
@@ -33,7 +33,7 @@ export default function Profile() {
         </BorderBox>
       </div>
       <BorderBox boxStyle="square">
-        <h2>맡은 일을 끝까지 책임지겠습니다.</h2>
+        <h2>포기하지 않고 끝까지 책임지겠습니다.</h2>
         <p>
           <span>
             &nbsp;&nbsp;저는 문제를 두려워하지 않으며, 주어진 일은 반드시 끝을

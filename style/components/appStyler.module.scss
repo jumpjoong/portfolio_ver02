@@ -12,6 +12,7 @@
     scale: 0;
   }
   > div:nth-of-type(1) {
+    cursor: default;
     background-color: var(--slightlyDarkBackground);
     padding: 10px 30px;
     display: flex;

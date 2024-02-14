@@ -15,7 +15,7 @@ export default function Intro({ scrollTop }: ScrollTopType) {
             im.hj
           </text>
         </svg>
-        <div className={`${styles.scroll} ${!scrollTop && styles.scrollEffect}`}href="#">
+        <div className={`${styles.scroll} ${!scrollTop && styles.scrollEffect}`}>
           <span></span>
           <span></span>
           <span></span>

@@ -15,12 +15,12 @@ export default function Intro({ scrollTop }: ScrollTopType) {
             im.hj
           </text>
         </svg>
-        <a className={`${styles.scroll} ${!scrollTop && styles.scrollEffect}`}href="#">
+        <div className={`${styles.scroll} ${!scrollTop && styles.scrollEffect}`}href="#">
           <span></span>
           <span></span>
           <span></span>
           <p>Scroll</p>
-        </a>
+        </div>
       </div>
     </section>
   );

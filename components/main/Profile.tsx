@@ -24,7 +24,7 @@ export default function Profile() {
           </div>
           <div>
             <a
-              href="https://docs.google.com/document/d/1HFrj9YTwJGkI7o3UD1X5ryiYCo3fWuX7/edit?usp=sharing&ouid=109176874359034204971&rtpof=true&sd=true"
+              href="https://docs.google.com/document/d/1-7ZBjNPFEdS7I9hQcf0izflteSrEDKat/edit?usp=sharing&ouid=109176874359034204971&rtpof=true&sd=true"
               target="_blank"
             >
               이력서 : 지원자(김현중)
